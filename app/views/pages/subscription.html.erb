@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <h3>My Cool Subscription-Based Service</h3>
+  </div>
+  <div class="row">
+    <%= image_tag 'fozzie_the_bear.jpg', style: 'height:100%;width:200px', class: 'img-thumbnail' %>
+  </div>
+  <div class="row">
+    <h3>Get the regular version</h3>
+  </div>
+  <div class="row">
+    <%= form_with url: checkout_sessions_url, method: :post do |form| %>
+      <%= form.hidden_field :lookup_key, value: 'price_1KVN9cBdQaMl8FpZ2peYV4ZU' %>
+      <%= form.submit 'Checkout', id: 'checkout-and-portal-button' %>
+    <% end %>
+  </div>
+</div>
