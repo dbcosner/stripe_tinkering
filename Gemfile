@@ -5,7 +5,12 @@ ruby "3.0.1"
 
 ##### Stuff I added #####
 
+gem 'awesome_print'
 gem 'stripe', '~> 5.4'
+
+group :development do
+  gem 'pry-byebug'
+end
 
 #####
 
@@ -64,7 +69,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
+  # NOTE : I commented this out :
+  # gem "web-console"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

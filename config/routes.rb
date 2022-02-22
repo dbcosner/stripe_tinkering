@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#subscription"
 
+  get 'success', to: 'pages#success', as: 'success'
+  get 'cancel', to: 'pages#cancel', as: 'cancel'
+
   resources :checkout_sessions, only: %w[create destroy]
+  resources :portal_sessions, only: %w[create destroy]
 end

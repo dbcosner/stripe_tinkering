@@ -1,0 +1,6 @@
+<h1>Success</h1>
+
+<%= form_with url: portal_sessions_url, method: :post do |form| %>
+  <%= form.hidden_field :session_id, value: @checkout_session_id %>
+  <%= form.submit 'Manage your billing information', id: 'checkout-and-portal-button' %>
+<% end %>
