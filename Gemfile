@@ -6,6 +6,7 @@ ruby "3.0.1"
 ##### Stuff I added #####
 
 gem 'awesome_print'
+gem 'pg'
 gem 'stripe', '~> 5.4'
 
 group :development do
@@ -21,7 +22,8 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 gem "sprockets-rails"
 
 # Use mysql as the database for Active Record
-gem "mysql2", "~> 0.5"
+# NOTE : We're using PostgresQL instead :
+# gem "mysql2", "~> 0.5"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
